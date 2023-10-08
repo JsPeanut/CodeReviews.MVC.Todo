@@ -19,5 +19,9 @@ body {
 
 .todolist .btn {
     margin: 1em -2px 1em -2px;
-    margin-left: 10px;
+    margin-left: 2.5px;
+}
+
+.listitems{
+    align-items: center;
 }

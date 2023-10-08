@@ -1,7 +1,10 @@
+using MVC.Todo.JsPeanut.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<HomeService, HomeService>();
 
 var app = builder.Build();
 

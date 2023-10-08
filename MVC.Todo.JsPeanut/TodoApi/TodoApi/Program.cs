@@ -25,6 +25,7 @@ app.MapGet("/todoitems", async (TodoDb db) =>
 app.MapGet("/todoitems/{id}", async (int id, TodoDb db) =>
     await db.Todos.FindAsync(id)
         is Todo todo
+
             ? Results.Ok(new TodoItemDTO(todo))
             : Results.NotFound());
 
