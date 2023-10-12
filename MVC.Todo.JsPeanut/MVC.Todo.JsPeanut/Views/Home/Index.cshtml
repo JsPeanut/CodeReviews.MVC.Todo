@@ -20,7 +20,7 @@
     <ul id="todolist">
         @foreach (var todo in Model.TodoList)
         {
-            @if (todo.IsComplete == false)
+            @if (!todo.IsComplete)
             {
                 <li class="listitems">
                     @todo.Name
